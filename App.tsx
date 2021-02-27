@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Alestry Demo App Running!</Text>
+      <Text>Alestry App Running!</Text>
       <StatusBar style="auto" />
     </View>
   );
