@@ -1,15 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
   console.log('App executed');
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>Alestry App Running!</Text>
       <StatusBar style="auto" />
-    </View>
+      <Image source={require('./assets/splash.png')} />
+    </SafeAreaView>
   );
 }
 
