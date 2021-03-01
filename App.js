@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import {
   StyleSheet,
@@ -7,14 +6,21 @@ import {
   SafeAreaView,
   View,
   InteractionManager,
+  Button,
+  Platform,
+  StatusBar,
 } from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Image source={require('./assets/trime-tag.png')} />
-      <Image source={require('./assets/trime-subtext.png')} />
+      <View style={{ height: 300 }}>
+        <Image source={require('./assets/trime-tag.png')} />
+      </View>
+      <View style={{ height: 300 }}>
+        <Image source={require('./assets/trime-subtext.png')} />
+      </View>
+      <Button title="Start" onPress={() => console.log('Button Tapped')} />
     </SafeAreaView>
   );
 }
@@ -26,5 +32,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   },
 });
