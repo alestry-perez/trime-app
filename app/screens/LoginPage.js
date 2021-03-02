@@ -8,20 +8,25 @@ import {
   StatusBar,
 } from 'react-native';
 
+import ButtonComponent, {
+  CircleButton,
+  RoundButton,
+  RectangleButton,
+} from 'react-native-button-component';
+
 import colors from '../config/colors';
 
-function WelcomeScreen(props) {
+function LoginPage(props) {
   return (
     <View style={styles.container}>
-      <View style={{ top: 200, flex: 1 }}>
-        <Image source={require('../assets/trime-tag.png')} />
-      </View>
-      <View style={{ top: 295, flex: 1 }}>
-        <Image source={require('../assets/trime-subtext.png')} />
-      </View>
-      <View style={{ top: 130, flex: 1 }}>
-        <Button title="Start" onPress={() => console.log('Button Tapped')} />
-      </View>
+      <Image
+        style={styles.background}
+        source={require('../assets/background.png')}
+      />
+      <Image
+        style={styles.loginpic}
+        source={require('../assets/trime-login-pic.png')}
+      />
     </View>
   );
 }
@@ -35,6 +40,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   },
+  background: {
+    top: 225,
+  },
+  loginpic: {
+    top: -575,
+  },
 });
 
-export default WelcomeScreen;
+export default LoginPage;
