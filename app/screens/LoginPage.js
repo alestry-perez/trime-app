@@ -6,7 +6,6 @@ import {
   Button,
   Platform,
   StatusBar,
-  TouchableOpacity,
 } from 'react-native';
 
 import colors from '../config/colors';
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   ebutton: {
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.primary,
     borderRadius: 14,
     margin: 5,
   },
