@@ -6,13 +6,8 @@ import {
   Button,
   Platform,
   StatusBar,
+  TouchableOpacity,
 } from 'react-native';
-
-import ButtonComponent, {
-  CircleButton,
-  RoundButton,
-  RectangleButton,
-} from 'react-native-button-component';
 
 import colors from '../config/colors';
 
@@ -23,6 +18,32 @@ function LoginPage(props) {
         style={styles.background}
         source={require('../assets/background.png')}
       />
+      <View style={styles.buttons}>
+        <View style={styles.abutton}>
+          <Button
+            onPress={() => console.log('Button Tapped')}
+            title="Continue with Apple"
+          />
+        </View>
+        <View style={styles.gbutton}>
+          <Button
+            onPress={() => console.log('Button Tapped')}
+            title="Continue with Google"
+          />
+        </View>
+        <View style={styles.fbutton}>
+          <Button
+            onPress={() => console.log('Button Tapped')}
+            title="Continue with Facebook"
+          />
+        </View>
+        <View style={styles.ebutton}>
+          <Button
+            onPress={() => console.log('Button Tapped')}
+            title="Continue with Email"
+          />
+        </View>
+      </View>
       <Image
         style={styles.loginpic}
         source={require('../assets/trime-login-pic.png')}
@@ -41,10 +62,34 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   },
   background: {
-    top: 225,
+    top: 315,
   },
   loginpic: {
-    top: -575,
+    top: -675,
+  },
+  buttons: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+  abutton: {
+    backgroundColor: colors.white,
+    borderRadius: 14,
+    margin: 5,
+  },
+  gbutton: {
+    backgroundColor: colors.white,
+    borderRadius: 14,
+    margin: 5,
+  },
+  fbutton: {
+    backgroundColor: colors.facebook,
+    borderRadius: 14,
+    margin: 5,
+  },
+  ebutton: {
+    backgroundColor: colors.yellow,
+    borderRadius: 14,
+    margin: 5,
   },
 });
 
