@@ -21,6 +21,10 @@ function LoginPage(props) {
         />
         <View style={styles.buttons}>
           <View style={styles.abutton}>
+            <Image
+              style={styles.icons}
+              source={require('../assets/apple-icon.png')}
+            />
             <Button
               color="black"
               onPress={() => console.log('Button Tapped')}
@@ -28,6 +32,10 @@ function LoginPage(props) {
             />
           </View>
           <View style={styles.fbutton}>
+            <Image
+              style={styles.icons}
+              source={require('../assets/fb-icon.png')}
+            />
             <Button
               color="white"
               onPress={() => console.log('Button Tapped')}
@@ -35,6 +43,10 @@ function LoginPage(props) {
             />
           </View>
           <View style={styles.gbutton}>
+            <Image
+              style={styles.icons}
+              source={require('../assets/google-icon.png')}
+            />
             <Button
               color="black"
               onPress={() => console.log('Button Tapped')}
@@ -42,6 +54,10 @@ function LoginPage(props) {
             />
           </View>
           <View style={styles.ebutton}>
+            <Image
+              style={styles.icons}
+              source={require('../assets/email-icon.png')}
+            />
             <Button
               color="white"
               onPress={() => console.log('Button Tapped')}
@@ -72,16 +88,23 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   },
   background: {
-    top: 350,
+    top: 285,
   },
   loginpic: {
-    top: -750,
+    top: -690,
+  },
+  icons: {
+    alignContent: 'center',
+    top: 18,
+    left: 20,
   },
   buttons: {
-    top: -90,
+    top: -200,
+    height: 45,
+    width: 300,
   },
   subtext: {
-    top: -50,
+    top: 40,
   },
   abutton: {
     backgroundColor: colors.white,
