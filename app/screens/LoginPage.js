@@ -80,51 +80,52 @@ function LoginPage(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    resizeMode: 'cover',
     backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   },
   background: {
-    top: 285,
+    top: 300,
   },
   loginpic: {
-    top: -690,
-  },
-  icons: {
-    alignContent: 'center',
-    top: 18,
-    left: 20,
+    bottom: 855,
   },
   buttons: {
-    top: -200,
-    height: 45,
+    bottom: 190,
     width: 300,
   },
+  icons: {
+    bottom: 13,
+    left: 20,
+    position: 'absolute',
+  },
   subtext: {
-    top: 40,
+    bottom: 150,
   },
   abutton: {
     backgroundColor: colors.white,
     borderRadius: 14,
-    margin: 5,
+    padding: 5,
+    marginTop: 8,
   },
   gbutton: {
     backgroundColor: colors.white,
     borderRadius: 14,
-    margin: 5,
+    padding: 5,
+    marginTop: 8,
   },
   fbutton: {
     backgroundColor: colors.facebook,
     borderRadius: 14,
-    margin: 5,
+    padding: 5,
+    marginTop: 8,
   },
   ebutton: {
     backgroundColor: colors.primary,
     borderRadius: 14,
-    margin: 5,
+    padding: 5,
+    marginTop: 8,
   },
 });
 
