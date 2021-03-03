@@ -59,7 +59,6 @@ function LoginPage(props) {
               source={require('../assets/email-icon.png')}
             />
             <Button
-              color="white"
               onPress={() => console.log('Button Tapped')}
               title="Continue with Email"
             />
