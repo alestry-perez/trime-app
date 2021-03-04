@@ -13,10 +13,23 @@ import colors from '../config/colors';
 
 function WhoAreYou(props) {
   return (
-    <Image
-      style={styles.background}
-      source={require('../assets/background.png')}
-    />
+    <SafeAreaView>
+      <Image
+        style={styles.background}
+        source={require('../assets/background.png')}
+      />
+      <View style={styles.profilesection}>
+        <Image source={require('../assets/profile-ellipse.png')} />
+        <Image
+          style={styles.profilepicture}
+          source={require('../assets/profile-picture.png')}
+        />
+        <Image
+          style={styles.profilesubtext}
+          source={require('../assets/profile-subtext.png')}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 
@@ -26,6 +39,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
+  },
+  background: {
+    top: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  profilesection: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    bottom: 700,
+  },
+  profilepicture: {
+    bottom: 133,
+  },
+  profilesubtext: {
+    bottom: 80,
   },
 });
 
