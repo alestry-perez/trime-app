@@ -6,14 +6,13 @@ import {
   Button,
   Platform,
   StatusBar,
-  SafeAreaView,
 } from 'react-native';
 
 import colors from '../config/colors';
 
-function LoginPage(props) {
+export let LoginPage = ({ navigation }) => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.container}>
         <Image
           style={styles.background}
@@ -73,9 +72,9 @@ function LoginPage(props) {
           source={require('../assets/trime-login-pic.png')}
         />
       </View>
-    </SafeAreaView>
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -127,5 +126,3 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 });
-
-export default LoginPage;
