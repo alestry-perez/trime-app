@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "TrimeApp",
+    "slug": "TrimeApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/pics/icon.png",
+    "splash": {
+      "image": "./app/assets/pics/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/pics/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/pics/favicon.png"
+    },
+    "description": ""
+  }
+}
