@@ -20,11 +20,11 @@ export let WhoAreYouPage = ({ navigation }) => {
       heading="Lets Start"
       nextScreen="Interest"
     >
-      {/* <View style={styles.container}>
-        <Image
+      <View style={styles.container}>
+        {/* <Image
           style={styles.background}
           source={require('../assets/background.png')}
-        />
+        /> */}
         <View style={styles.profilesection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
@@ -36,32 +36,32 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
-      </View> */}
+      </View>
     </ScreenWithNext>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.white,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
-  },
-  background: {
-    top: 80,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  // container: {
+  //   backgroundColor: colors.white,
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  //   paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
+  // },
+  // background: {
+  //   top: 80,
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
   profilesection: {
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 700,
+    bottom: -45,
   },
   profilepicture: {
-    bottom: 300,
+    bottom: 135,
   },
   profilesubtext: {
-    bottom: 180,
+    bottom: 85,
   },
 });
