@@ -12,6 +12,8 @@ import {
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
+// import { Carousel } from '../components/Carousel';
+
 import colors from '../config/colors';
 
 export let WhoAreYouPage = ({ navigation }) => {
@@ -38,7 +40,6 @@ export let WhoAreYouPage = ({ navigation }) => {
           />
         </View>
       </View>
-      <View></View>
     </ScreenWithNext>
   );
 };

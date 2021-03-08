@@ -25,7 +25,7 @@ export default () => {
           headerShown: false,
         }}
       >
-        {/* <Stack.Screen name="LoginPage" component={LoginPage} /> */}
+        <Stack.Screen name="LoginPage" component={LoginPage} />
         <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} />
         <Stack.Screen name="Interest" component={InterestSelectPage} />
         <Stack.Screen name="PT" component={PickYourPTPage} />
