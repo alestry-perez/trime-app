@@ -3,6 +3,7 @@ import {
   StyleSheet,
   Image,
   View,
+  Text,
   Button,
   Platform,
   StatusBar,
@@ -37,6 +38,7 @@ export let WhoAreYouPage = ({ navigation }) => {
           />
         </View>
       </View>
+      <View></View>
     </ScreenWithNext>
   );
 };
