@@ -8,6 +8,7 @@ import {
   StatusBar,
   SafeAreaView,
 } from 'react-native';
+import Carousel from '../components/Carousel';
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
@@ -36,6 +37,7 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
+        <Carousel />
       </View>
     </ScreenWithNext>
   );

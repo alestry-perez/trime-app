@@ -10,6 +10,12 @@ target 'TrimeApp' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'AKPickerView', :git => 'https://github.com/prscX/AKPickerView.git'
+
+  use_native_modules!
+
+  pod 'RNNumberSelector', :path => '../node_modules/react-native-number-selector/ios'
+
   # Uncomment the code below to enable Flipper.
   #
   # You should not install Flipper in CI environments when creating release
