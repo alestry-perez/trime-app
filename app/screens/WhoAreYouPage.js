@@ -12,7 +12,7 @@ import {
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
-// import { Carousel } from '../components/Carousel';
+import { Carousel } from '../components/Carousel';
 
 import colors from '../config/colors';
 
@@ -24,10 +24,10 @@ export let WhoAreYouPage = ({ navigation }) => {
       nextScreen="Interest"
     >
       <View style={styles.container}>
-        {/* <Image
+        <Image
           style={styles.background}
           source={require('../assets/background.png')}
-        /> */}
+        />
         <View style={styles.profilesection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
