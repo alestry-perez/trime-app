@@ -1,18 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Image,
-  View,
-  Button,
-  Platform,
-  StatusBar,
-  SafeAreaView,
-} from 'react-native';
+import { StyleSheet, Image, View } from 'react-native';
 
-import { ScreenWithNext } from '../components/ScreenWithNext';
 import { NumberScroll } from '../components/NumberScroll';
-
-import colors from '../config/colors';
+import { ScreenWithNext } from '../components/ScreenWithNext';
 
 export let WhoAreYouPage = ({ navigation }) => {
   return (
@@ -37,15 +27,14 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
+        <NumberScroll />
       </View>
-      <NumberScroll />
     </ScreenWithNext>
   );
 };
 
 const styles = StyleSheet.create({
   // container: {
-  //   backgroundColor: colors.white,
   //   alignItems: 'center',
   //   justifyContent: 'center',
   //   paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,

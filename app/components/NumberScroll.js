@@ -13,31 +13,28 @@ export let NumberScroll = ({}) => {
   ]);
 
   return (
-    <View styles={styles.container}>
-      <ScrollView>
-        {number.map((item) => (
-          <View key={item.key}>
-            <Text styles={styles.items}>{item.name}</Text>
-          </View>
-        ))}
-      </ScrollView>
-    </View>
+    <ScrollView>
+      {number.map((item) => (
+        <View key={item.key}>
+          <Text styles={{ fontSize: 54 }}>{item.name}</Text>
+        </View>
+      ))}
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 40,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // flex: 1,
+    // paddingTop: 40,
+    // paddingHorizontal: 20,
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
-  items: {
-    marginTop: 24,
-    padding: 24,
-    backgroundColor: 'pink',
-    fontSize: 24,
+  itemScroll: {
+    // marginTop: 24,
+    // padding: 24,
+    // backgroundColor: 'pink',
+    // fontSize: 24,
   },
 });
