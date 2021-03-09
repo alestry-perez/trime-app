@@ -3,7 +3,6 @@ import {
   StyleSheet,
   Image,
   View,
-  Text,
   Button,
   Platform,
   StatusBar,
@@ -11,8 +10,6 @@ import {
 } from 'react-native';
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
-
-import { Carousel } from '../components/Carousel';
 
 import colors from '../config/colors';
 
@@ -24,10 +21,10 @@ export let WhoAreYouPage = ({ navigation }) => {
       nextScreen="Interest"
     >
       <View style={styles.container}>
-        <Image
+        {/* <Image
           style={styles.background}
           source={require('../assets/background.png')}
-        />
+        /> */}
         <View style={styles.profilesection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
@@ -51,11 +48,11 @@ const styles = StyleSheet.create({
   //   justifyContent: 'center',
   //   paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
   // },
-  // background: {
-  //   top: 80,
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
+  background: {
+    top: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   profilesection: {
     alignItems: 'center',
     justifyContent: 'center',
