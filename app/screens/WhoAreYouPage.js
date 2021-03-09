@@ -8,7 +8,6 @@ import {
   StatusBar,
   SafeAreaView,
 } from 'react-native';
-import Carousel from '../components/Carousel';
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
