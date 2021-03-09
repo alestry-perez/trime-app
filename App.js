@@ -10,6 +10,9 @@ import { InterestSelectPage } from './app/screens/InterestSelectPage';
 import { FitnessLevelPage } from './app/screens/FitnessLevelPage';
 import { PickYourPTPage } from './app/screens/PickYourPTPage';
 import { SetGoalsPage } from './app/screens/SetGoalsPage';
+import { LoginTwoPage } from './app/screens/LoginTwoPage';
+import { LetsGoPage } from './app/screens/LetsGoPage';
+import { PaymentPage } from './app/screens/PaymentPage';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +34,9 @@ export default () => {
         <Stack.Screen name="PT" component={PickYourPTPage} />
         <Stack.Screen name="FitnessLevel" component={FitnessLevelPage} />
         <Stack.Screen name="SetGoals" component={SetGoalsPage} />
+        <Stack.Screen name="LoginTwo" component={LoginTwoPage} />
+        <Stack.Screen name="LetsGo" component={LetsGoPage} />
+        <Stack.Screen name="Payment" component={PaymentPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
