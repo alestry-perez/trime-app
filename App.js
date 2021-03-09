@@ -26,7 +26,7 @@ export default () => {
         }}
       >
         {/* <Stack.Screen name="LoginPage" component={LoginPage} /> */}
-        <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} />
+        {/* <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} /> */}
         <Stack.Screen name="Interest" component={InterestSelectPage} />
         <Stack.Screen name="PT" component={PickYourPTPage} />
         <Stack.Screen name="FitnessLevel" component={FitnessLevelPage} />
