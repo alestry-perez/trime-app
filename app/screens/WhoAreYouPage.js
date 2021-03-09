@@ -37,7 +37,6 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
-        <Carousel />
       </View>
     </ScreenWithNext>
   );
