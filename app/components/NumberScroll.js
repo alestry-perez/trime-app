@@ -25,16 +25,16 @@ export let NumberScroll = ({}) => {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    // paddingTop: 40,
-    // paddingHorizontal: 20,
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    flex: 1,
+    paddingTop: 40,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   itemScroll: {
-    // marginTop: 24,
-    // padding: 24,
-    // backgroundColor: 'pink',
-    // fontSize: 24,
+    marginTop: 24,
+    padding: 24,
+    backgroundColor: 'pink',
+    fontSize: 24,
   },
 });
