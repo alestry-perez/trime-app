@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import { ScreenWithNext } from '../components/ScreenWithNext';
+import { NumberScroll } from '../components/NumberScroll';
 
 import colors from '../config/colors';
 
@@ -25,18 +26,19 @@ export let WhoAreYouPage = ({ navigation }) => {
           style={styles.background}
           source={require('../assets/background.png')}
         /> */}
-        <View style={styles.profilesection}>
+        <View style={styles.profileSection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
-            style={styles.profilepicture}
+            style={styles.profilePicture}
             source={require('../assets/profile-picture.png')}
           />
           <Image
-            style={styles.profilesubtext}
+            style={styles.profileSubtext}
             source={require('../assets/profile-subtext.png')}
           />
         </View>
       </View>
+      <NumberScroll />
     </ScreenWithNext>
   );
 };
@@ -53,15 +55,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  profilesection: {
+  profileSection: {
     alignItems: 'center',
     justifyContent: 'center',
     bottom: -45,
   },
-  profilepicture: {
+  profilePicture: {
     bottom: 135,
   },
-  profilesubtext: {
+  profileSubtext: {
     bottom: 85,
   },
 });
