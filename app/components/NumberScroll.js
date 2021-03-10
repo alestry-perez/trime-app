@@ -3,9 +3,8 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 import colors from '../config/colors';
 
-export let NumberScroll = ({}) => {
+export let NumberScroll = () => {
   const [number, setNumber] = useState([
-    { name: '---', key: '0' },
     { name: '18', key: '1' },
     { name: '19', key: '2' },
     { name: '20', key: '3' },
@@ -48,7 +47,6 @@ export let NumberScroll = ({}) => {
       {number.map((item) => (
         <View key={item.key}>
           <Text style={styles.itemScroll}>{item.name}</Text>
-          <Text style={styles.ageText}>years</Text>
         </View>
       ))}
     </ScrollView>
@@ -56,13 +54,6 @@ export let NumberScroll = ({}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 40,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   itemScroll: {
     marginTop: 24,
     padding: 24,
@@ -70,10 +61,5 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     alignSelf: 'center',
     color: colors.primary,
-  },
-  ageText: {
-    bottom: 24,
-    fontSize: 18,
-    alignSelf: 'center',
   },
 });

@@ -1,8 +1,10 @@
 import React from 'react';
-import { StyleSheet, Image, View, Button } from 'react-native';
+import { StyleSheet, Image, View, Button, Text } from 'react-native';
 
 import { NumberScroll } from '../components/NumberScroll';
 import { ScreenWithNext } from '../components/ScreenWithNext';
+
+import colors from '../config/colors';
 
 export let WhoAreYouPage = ({ navigation }) => {
   return (
@@ -29,6 +31,7 @@ export let WhoAreYouPage = ({ navigation }) => {
         </View>
         <View>
           <NumberScroll />
+          <Text style={styles.ageText}>years</Text>
           <Image
             style={styles.outline}
             source={require('../assets/outline.png')}
@@ -62,8 +65,14 @@ const styles = StyleSheet.create({
     bottom: 85,
   },
   outline: {
-    top: 52,
+    top: 47,
     alignSelf: 'center',
     position: 'absolute',
+  },
+  ageText: {
+    bottom: 24,
+    fontSize: 18,
+    fontWeight: '500',
+    alignSelf: 'center',
   },
 });
