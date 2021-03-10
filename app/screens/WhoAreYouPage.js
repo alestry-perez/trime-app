@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, Image, View, Button } from 'react-native';
 
 import { NumberScroll } from '../components/NumberScroll';
 import { ScreenWithNext } from '../components/ScreenWithNext';
@@ -27,7 +27,13 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
-        <NumberScroll />
+        <View>
+          <NumberScroll />
+          <Image
+            style={styles.outline}
+            source={require('../assets/outline.png')}
+          />
+        </View>
       </View>
     </ScreenWithNext>
   );
@@ -54,5 +60,10 @@ const styles = StyleSheet.create({
   },
   profileSubtext: {
     bottom: 85,
+  },
+  outline: {
+    top: 52,
+    alignSelf: 'center',
+    position: 'absolute',
   },
 });
