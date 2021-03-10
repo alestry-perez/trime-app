@@ -3,20 +3,20 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export let NumberScroll = ({}) => {
   const [number, setNumber] = useState([
-    { name: 'One', key: '1' },
-    { name: 'Two', key: '2' },
-    { name: 'Three', key: '3' },
-    { name: 'Four', key: '4' },
-    { name: 'Five', key: '5' },
-    { name: 'Six', key: '6' },
-    { name: 'Seven', key: '7' },
+    { name: '1', key: '1' },
+    { name: '2', key: '2' },
+    { name: '3', key: '3' },
+    { name: '4', key: '4' },
+    { name: '5', key: '5' },
+    { name: '6', key: '6' },
+    { name: '7', key: '7' },
   ]);
 
   return (
-    <ScrollView>
+    <ScrollView horizontal={true}>
       {number.map((item) => (
         <View key={item.key}>
-          <Text styles={{ fontSize: 54 }}>{item.name}</Text>
+          <Text style={styles.itemScroll}>{item.name}</Text>
         </View>
       ))}
     </ScrollView>
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   itemScroll: {
     marginTop: 24,
     padding: 24,
-    backgroundColor: 'pink',
     fontSize: 24,
+    backgroundColor: 'pink',
   },
 });
