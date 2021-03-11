@@ -1,12 +1,24 @@
-import React from 'react';
-import { StyleSheet, Image, View, Button, Text } from 'react-native';
+import React, { useState } from 'react';
+import {
+  StyleSheet,
+  Image,
+  View,
+  Button,
+  Text,
+  TouchableHighlight,
+} from 'react-native';
 
+import { GenSelect } from '../components/GenSelect';
 import { NumberScroll } from '../components/NumberScroll';
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
 import colors from '../config/colors';
 
 export let WhoAreYouPage = ({ navigation }) => {
+  let [selected, setSelected] = useState(false);
+  let onPress = () => {
+    setSelected(!selected);
+  };
   return (
     <ScreenWithNext
       navigation={navigation}
@@ -14,10 +26,6 @@ export let WhoAreYouPage = ({ navigation }) => {
       nextScreen="Interest"
     >
       <View style={styles.container}>
-        {/* <Image
-          style={styles.background}
-          source={require('../assets/background.png')}
-        /> */}
         <View style={styles.profileSection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
@@ -37,17 +45,13 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/outline.png')}
           />
         </View>
+        <GenSelect />
       </View>
     </ScreenWithNext>
   );
 };
 
 const styles = StyleSheet.create({
-  // container: {
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
-  // },
   background: {
     top: 80,
     alignItems: 'center',

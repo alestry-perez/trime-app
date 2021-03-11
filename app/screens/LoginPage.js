@@ -7,6 +7,7 @@ import {
   Platform,
   StatusBar,
 } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import colors from '../config/colors';
 
@@ -63,14 +64,6 @@ export let LoginPage = ({ navigation }) => {
             />
           </View>
         </View>
-        <Image
-          style={styles.subtext}
-          source={require('../assets/sub-text.png')}
-        />
-        <Image
-          style={styles.loginpic}
-          source={require('../assets/trime-login-pic.png')}
-        />
       </View>
     </View>
   );
