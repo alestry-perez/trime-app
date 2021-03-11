@@ -1,79 +1,55 @@
 import React, { useState } from 'react';
-import { StyleSheet, Image, View, TouchableHighlight } from 'react-native';
+import {
+  StyleSheet,
+  Image,
+  View,
+  TouchableHighlight,
+  TouchableOpacity,
+} from 'react-native';
 
-export let GenSelect = () => {
+function GenSelect({ style }) {
   let [selected, setSelected] = useState(false);
   let onPress = () => {
     setSelected(!selected);
   };
   return (
-    <View style={styles.genIcon}>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/genX.png')} />
-      </TouchableHighlight>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/gen.png')} />
-      </TouchableHighlight>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/genY.png')} />
-      </TouchableHighlight>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/genO.png')} />
-      </TouchableHighlight>
+    <TouchableOpacity
+      activeOpacity={0.6}
+      underlayColor=""
+      onPress={onPress}
+      style={{ backgroundColor: selected ? '#FFB424' : '#E8E8E8' }}
+    >
+      <View style={styles.boxes}>
+        <Image />
+      </View>
+    </TouchableOpacity>
+  );
+}
+
+export function boxSelect({ box, style }) {
+  return (
+    <View
+      style={{
+        flex: 1,
+        flexDirection: 'row',
+      }}
+    >
+      {box.map((tag) => {
+        return <GenSelect key={tag} value={tag} style={style} />;
+      })}
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {},
+  boxes: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    height: 70,
+    width: 70,
+  },
   genIcon: {
     paddingTop: 30,
     paddingBottom: 30,

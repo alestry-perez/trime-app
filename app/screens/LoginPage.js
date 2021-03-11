@@ -19,6 +19,10 @@ export let LoginPage = ({ navigation }) => {
           style={styles.background}
           source={require('../assets/background.png')}
         />
+        <Image
+          style={styles.loginpic}
+          source={require('../assets/trime-login-pic.png')}
+        />
         <View style={styles.buttons}>
           <View style={styles.abutton}>
             <Image
@@ -80,10 +84,10 @@ const styles = StyleSheet.create({
     top: 300,
   },
   loginpic: {
-    bottom: 855,
+    bottom: 500,
   },
   buttons: {
-    bottom: 190,
+    bottom: 400,
     width: 300,
   },
   icons: {

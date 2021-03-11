@@ -45,7 +45,11 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/outline.png')}
           />
         </View>
-        <GenSelect />
+        <GenSelect>
+          <View>
+            <Text>H</Text>
+          </View>
+        </GenSelect>
       </View>
     </ScreenWithNext>
   );
