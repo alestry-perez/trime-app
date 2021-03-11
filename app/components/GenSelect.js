@@ -77,10 +77,12 @@ export let GenSelect = () => {
 const styles = StyleSheet.create({
   container: {},
   genIcon: {
+    paddingTop: 30,
+    paddingBottom: 30,
     alignItems: 'center',
     justifyContent: 'space-between',
     flexDirection: 'row',
     width: 350,
-    left: '55%',
+    left: 40,
   },
 });
