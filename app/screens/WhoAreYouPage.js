@@ -20,7 +20,7 @@ export let WhoAreYouPage = ({ navigation }) => {
       heading="Lets Start"
       nextScreen="Interest"
     >
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Image
           style={styles.background}
           source={require('../assets/background.png')}
@@ -36,7 +36,7 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/profile-subtext.png')}
           />
         </View>
-      </View>
+      </View> */}
     </ScreenWithNext>
   );
 };
