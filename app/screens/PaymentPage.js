@@ -7,7 +7,7 @@ export let PaymentPage = ({ navigation }) => {
     <ScreenWithNext
       navigation={navigation}
       heading="Select a Payment Method"
-      nextScreen="Next"
+      nextScreen="YouDidIt"
       previousScreen="LetsGo"
     >
       <View style={styles.cardContainer}>

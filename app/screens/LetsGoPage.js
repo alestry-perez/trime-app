@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 90,
+    marginBottom: 80,
   },
 
   image: {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   largeText: {
     fontSize: 36,
     fontWeight: '800',
-    paddingTop: 20,
+    paddingTop: 40,
     paddingBottom: 15,
   },
   text: {

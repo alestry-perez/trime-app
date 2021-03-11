@@ -13,6 +13,7 @@ import { SetGoalsPage } from './app/screens/SetGoalsPage';
 import { LoginTwoPage } from './app/screens/LoginTwoPage';
 import { LetsGoPage } from './app/screens/LetsGoPage';
 import { PaymentPage } from './app/screens/PaymentPage';
+import { YouDidItPage } from './app/screens/YouDidItPage';
 
 const Stack = createStackNavigator();
 
@@ -37,6 +38,7 @@ export default () => {
         <Stack.Screen name="LoginTwo" component={LoginTwoPage} />
         <Stack.Screen name="LetsGo" component={LetsGoPage} />
         <Stack.Screen name="Payment" component={PaymentPage} />
+        <Stack.Screen name="YouDidIt" component={YouDidItPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
