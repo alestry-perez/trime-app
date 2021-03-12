@@ -1,7 +1,6 @@
 import { Text, TouchableOpacity, View } from 'react-native';
 import React, { useState } from 'react';
 
-<<<<<<< HEAD
 function SupiTag({ value, style }) {
   let [selected, setSelected] = useState(false);
   const onPress = () => {
@@ -24,22 +23,6 @@ function SupiTag({ value, style }) {
       </View>
     </TouchableOpacity>
   );
-=======
-function SupiTag({value, style}) {
-    let [selected, setSelected] = useState(false);
-    const onPress = () => {
-        setSelected(!selected)
-    }
-
-    return <TouchableOpacity onPress={onPress}><View style={style}><Text style={{
-        fontSize: 15,
-        fontWeight: 'bold',
-        padding: 10,
-        color: selected ? 'black' : 'white',
-        backgroundColor: selected ? 'white' : 'black'
-    }}>{value}</Text></View>
-    </TouchableOpacity>
->>>>>>> testRepoMerge
 }
 
 export function TagsX({ initialTags, style }) {

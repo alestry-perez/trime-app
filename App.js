@@ -1,18 +1,7 @@
 import React from 'react';
+
 import 'react-native-gesture-handler';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {InterestSelectPage} from "./app/screens/InterestSelectPage";
-import {FitnessLevelPage} from "./app/screens/FitnessLevelPage";
-import {PickYourPTPage} from "./app/screens/PickYourPTPage";
-import {SetGoalsPage} from "./app/screens/SetGoalsPage";
-import { TrainingDaysPage } from "./app/screens/TrainingDaysPage"
-import { WhereDoYouTrainPage } from "./app/screens/WhereDoYouTrainPage"
 
-
-
-
-<<<<<<< HEAD
 import { LoginPage } from './app/screens/LoginPage.js';
 import { WhoAreYouPage } from './app/screens/WhoAreYouPage';
 import { NavigationContainer } from '@react-navigation/native';
@@ -22,23 +11,16 @@ import { FitnessLevelPage } from './app/screens/FitnessLevelPage';
 import { PickYourPTPage } from './app/screens/PickYourPTPage';
 import { SetGoalsPage } from './app/screens/SetGoalsPage';
 import { BaseInfoPage } from './app/screens/BaseInfoPage';
-import { LoginTwoPage } from './app/screens/LoginTwoPage';
-import { LetsGoPage } from './app/screens/LetsGoPage';
-import { PaymentPage } from './app/screens/PaymentPage';
-import { YouDidItPage } from './app/screens/YouDidItPage';
-=======
->>>>>>> testRepoMerge
 
 const Stack = createStackNavigator();
 
 let LogoTitle = () => {
   return null;
-}
+};
 
 export default () => {
   return (
     <NavigationContainer>
-<<<<<<< HEAD
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
@@ -47,38 +29,11 @@ export default () => {
         {/* <Stack.Screen name="LoginPage" component={LoginPage} /> */}
         <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} />
         <Stack.Screen name="BaseInfo" component={BaseInfoPage} />
-=======
-      <Stack.Navigator screenOptions={{
-        headerShown: false
-      }} >
->>>>>>> testRepoMerge
         <Stack.Screen name="Interest" component={InterestSelectPage} />
         <Stack.Screen name="PT" component={PickYourPTPage} />
         <Stack.Screen name="FitnessLevel" component={FitnessLevelPage} />
         <Stack.Screen name="SetGoals" component={SetGoalsPage} />
-<<<<<<< HEAD
-        <Stack.Screen name="LoginTwo" component={LoginTwoPage} />
-        <Stack.Screen name="LetsGo" component={LetsGoPage} />
-        <Stack.Screen name="Payment" component={PaymentPage} />
-        <Stack.Screen name="YouDidIt" component={YouDidItPage} />
-=======
-        <Stack.Screen name="TrainingDays" component={TrainingDaysPage} />
-        <Stack.Screen name="Map" component={WhereDoYouTrainPage} />
-
-
-
-
->>>>>>> testRepoMerge
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
-
-
-
-
-
-
-
-
-
