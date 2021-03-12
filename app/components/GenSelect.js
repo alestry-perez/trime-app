@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Image, View, Text, TouchableOpacity } from 'react-native';
 
-// so make items an array or something, so the selected state will point to exact item(index, for example)
+// make items an array or something, so the selected state will point to exact item (index, for example)
 
 //  this is state
 // const [state, setState] = useState(false);
