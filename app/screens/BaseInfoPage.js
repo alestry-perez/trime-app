@@ -61,12 +61,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   infoText: {
-    color: colors.primary,
+    color: 'black',
     left: 35,
     top: -30,
     bottom: 24,
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: '700',
     alignSelf: 'center',
   },
   hScroll: {

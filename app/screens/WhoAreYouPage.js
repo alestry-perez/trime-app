@@ -12,8 +12,6 @@ import { GenSelect } from '../components/GenSelect';
 import { NumberScroll } from '../components/NumberScroll';
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
-import colors from '../config/colors';
-
 export let WhoAreYouPage = ({ navigation }) => {
   let [selected, setSelected] = useState(false);
   let onPress = () => {
@@ -76,7 +74,7 @@ const styles = StyleSheet.create({
   ageText: {
     bottom: 24,
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: '700',
     alignSelf: 'center',
   },
 });
