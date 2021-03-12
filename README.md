@@ -1,6 +1,8 @@
-# Trime
+# Trime App
 ## HyperIsland Student Project 
-Trime Design & Frontend Development Project
+Design & Frontend Development Project
+
+http://trime.app/
 
 ### Developed by:
 - Ella Söder
