@@ -7,7 +7,7 @@ import MapView, { Marker } from 'react-native-maps';
 
 export let WhereDoYouTrainPage = ({ navigation }) => {
     return (
-        <ScreenWithNext navigation={navigation} heading="Where do you want to train?" nextScreen="YouDidIt"
+        <ScreenWithNext navigation={navigation} heading="Where do you want to train?" nextScreen="Payment"
             previousScreen="SetGoals">
             <View>
                 <MapView loadingEnabled={true} style={styles.map} provider={MapView.PROVIDER_GOOGLE} initialRegion={{

@@ -13,6 +13,9 @@ import {SetGoalsPage} from "./app/screens/SetGoalsPage";
 import { TrainingDaysPage } from "./app/screens/TrainingDaysPage"
 import { WhereDoYouTrainPage } from "./app/screens/WhereDoYouTrainPage"
 import {BaseInfoPage} from "./app/screens/BaseInfoPage";
+import {YouDidItPage} from "./app/screens/YouDidItPage";
+import {PaymentPage} from "./app/screens/PaymentPage";
+import {LoginTwoPage} from "./app/screens/LoginTwoPage";
 
 
 
@@ -32,7 +35,8 @@ export default () => {
           headerShown: false,
         }}
       >
-        {/* <Stack.Screen name="LoginPage" component={LoginPage} /> */}
+        {/*<Stack.Screen name="LoginPage" component={LoginPage} /> */}
+          <Stack.Screen name="LoginTwo" component={LoginTwoPage} />
         <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} />
         <Stack.Screen name="BaseInfo" component={BaseInfoPage} />
         <Stack.Screen name="Interest" component={InterestSelectPage} />
@@ -41,10 +45,8 @@ export default () => {
         <Stack.Screen name="SetGoals" component={SetGoalsPage} />
         <Stack.Screen name="TrainingDays" component={TrainingDaysPage} />
         <Stack.Screen name="Map" component={WhereDoYouTrainPage} />
-
-
-
-
+        <Stack.Screen name="YouDidIt" component={YouDidItPage} />
+          <Stack.Screen name="Payment" component={PaymentPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
