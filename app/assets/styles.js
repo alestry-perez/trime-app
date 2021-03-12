@@ -1,9 +1,13 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     flex: 1,
+  },
+
+  headingContainer: {
+    top: -10
   },
 
   textStyle: {
@@ -15,13 +19,15 @@ export const styles = StyleSheet.create({
   },
   dateContainer: {
     position: 'absolute',
-    right: 90,
+    right: 60,
     top: 5,
     padding: 10,
+
   },
   avatar: {
     position: 'absolute',
     right: 20,
+    top: 14,
     padding: 10,
   },
 
@@ -30,7 +36,8 @@ export const styles = StyleSheet.create({
   },
 
   wave: {
-    marginTop: 100,
+    marginTop: 80,
+
   },
 
   textMain: {
@@ -39,13 +46,14 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     textAlign: 'right',
     paddingRight: 25,
-    marginTop: 30,
+    marginTop: 25,
   },
 
   tagContainer: {
     marginTop: 150,
     padding: 25,
     height: 350,
+
   },
 
   tagStyles: {
@@ -65,12 +73,17 @@ export const styles = StyleSheet.create({
     padding: 20,
     justifyContent: 'space-between',
     flexDirection: 'row',
+
+
+
   },
 
   buttonStyle: {
     backgroundColor: 'black',
     width: 120,
     borderRadius: 18,
+
+
   },
 
   roundButton: {
@@ -79,13 +92,13 @@ export const styles = StyleSheet.create({
     height: 40,
     justifyContent: 'center',
     alignItems: 'center',
-
     borderRadius: 100,
+
   },
 
   onPressStyle: {
     backgroundColor: 'white',
-    color: 'black',
+    color: 'black'
   },
 
   cardContainer: {
@@ -93,14 +106,16 @@ export const styles = StyleSheet.create({
   },
 
   cardText: {
+
     fontSize: 22,
     fontWeight: 'bold',
     color: '#424242',
+
+
   },
 
   cards: {
     marginBottom: 10,
-    backgroundColor: '#E8E8E8',
     borderStyle: 'solid',
     borderColor: '#E8E8E8',
     borderWidth: 1,
@@ -108,34 +123,35 @@ export const styles = StyleSheet.create({
     height: 130,
     padding: 10,
     borderRadius: 8,
+
   },
 
   cardone: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
 
   cardtwo: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
 
   cardthree: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
 
   cardfour: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
 
   labelsContainer: {
@@ -143,21 +159,21 @@ export const styles = StyleSheet.create({
     height: 530,
   },
 
-  labelStyles: {
-    fontSize: 16,
+  labelText: {
+    fontSize: 18,
     fontWeight: '400',
-    color: 'red',
+    color: 'black'
   },
 
   levelImage: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
 
   goalImage: {
     top: -150,
-    left: 20,
+    left: 20
   },
 
   rowOne: {
@@ -194,6 +210,67 @@ export const styles = StyleSheet.create({
   },
   goalContainer: {
     height: 420,
-    padding: 20,
+    padding: 20
   },
+
+  dayStyles: {
+
+    borderStyle: 'solid',
+    borderColor: '#E8E8E8',
+    borderWidth: 1,
+    backgroundColor: '#E8E8E8',
+    margin: 15,
+    height: 50,
+    padding: 10,
+    borderRadius: 8,
+  },
+
+  dayText: {
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
+
+  dayIcon: {
+    flex: 1,
+    flexDirection: 'row'
+
+  },
+  dayContainer: {
+    width: '40%'
+  },
+  timeContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    left: -85
+  },
+  item: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    justifyContent: 'center',
+  },
+  lineStyle: {
+    fontSize: 25,
+    fontWeight: 'bold'
+  },
+
+  preferenceDisplay: {
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    top: 20,
+    marginBottom: 10
+  },
+  dayTextPrefer: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingLeft: 20
+  },
+
+
+  map: {
+    top: 15,
+    width: '100%',
+    height: 650,
+  },
+
+
 });
