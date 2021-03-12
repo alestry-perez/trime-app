@@ -13,7 +13,8 @@ function SupiTag({value, style}) {
         padding: 10,
         color: selected ? 'black' : 'white',
         backgroundColor: selected ? 'white' : 'black'
-    }}>{value}</Text></View></TouchableOpacity>
+    }}>{value}</Text></View>
+    </TouchableOpacity>
 }
 
 export function TagsX({initialTags, style}) {
