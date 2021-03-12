@@ -23,7 +23,7 @@ export let WhoAreYouPage = ({ navigation }) => {
     <ScreenWithNext
       navigation={navigation}
       heading="Lets Start"
-      nextScreen="Interest"
+      nextScreen="BaseInfo"
     >
       <View style={styles.container}>
         <View style={styles.profileSection}>
@@ -45,11 +45,7 @@ export let WhoAreYouPage = ({ navigation }) => {
             source={require('../assets/outline.png')}
           />
         </View>
-        <GenSelect>
-          <View>
-            <Text>H</Text>
-          </View>
-        </GenSelect>
+        <GenSelect />
       </View>
     </ScreenWithNext>
   );

@@ -1,45 +1,63 @@
-<TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/gen.png')} />
-      </TouchableHighlight>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/genY.png')} />
-      </TouchableHighlight>
-      <TouchableHighlight
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 10,
-          height: 70,
-          width: 70,
-          backgroundColor: selected ? '#FFB424' : '#E8E8E8',
-        }}
-        activeOpacity={0.6}
-        underlayColor=""
-        onPress={onPress}
-      >
-        <Image source={require('../assets/genO.png')} />
-      </TouchableHighlight>
+export let GenSelect = ({ value, style }) => {
+  let [selected, setSelected] = useState(false);
+  const onPress = () => {
+    setSelected(!selected);
+  };
+
+  return (
+    <View style={styles.genIcon}>
+      <TouchableOpacity onPress={onPress}>
+        <View
+          style={[
+            styles.boxes,
+            {
+              color: selected ? 'black' : 'white',
+              backgroundColor: selected ? '#FFB424' : '#E8E8E8',
+            },
+          ]}
+        >
+          <Image source={require('../assets/genX.png')} />
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
+        <View
+          style={[
+            styles.boxes,
+            {
+              color: selected ? 'black' : 'white',
+              backgroundColor: selected ? '#FFB424' : '#E8E8E8',
+            },
+          ]}
+        >
+          <Image source={require('../assets/gen.png')} />
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
+        <View
+          style={[
+            styles.boxes,
+            {
+              color: selected ? 'black' : 'white',
+              backgroundColor: selected ? '#FFB424' : '#E8E8E8',
+            },
+          ]}
+        >
+          <Image source={require('../assets/genY.png')} />
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
+        <View
+          style={[
+            styles.boxes,
+            {
+              color: selected ? 'black' : 'white',
+              backgroundColor: selected ? '#FFB424' : '#E8E8E8',
+            },
+          ]}
+        >
+          <Image source={require('../assets/genO.png')} />
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
+};

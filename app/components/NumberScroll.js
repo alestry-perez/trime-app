@@ -55,6 +55,7 @@ export let NumberScroll = () => {
 
 const styles = StyleSheet.create({
   itemScroll: {
+    left: 17,
     marginTop: 24,
     padding: 24,
     fontSize: 69,
