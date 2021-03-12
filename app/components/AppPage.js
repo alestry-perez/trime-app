@@ -29,7 +29,7 @@ export let AppPage = (props) => {
                         borderBottomWidth: 0.5,
                         marginLeft: 20,
                         marginRight: 20,
-                        padding: 12,
+                        padding: 10,
                     }}/>
                 <View>{props.children}</View>
             </View>
