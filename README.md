@@ -1,5 +1,5 @@
 # Trime App
-## HyperIsland Student Project 
+## A HyperIsland Student Project 
 Design & Frontend Development Project
 
 http://trime.app/
