@@ -10,10 +10,7 @@ import { InterestSelectPage } from './app/screens/InterestSelectPage';
 import { FitnessLevelPage } from './app/screens/FitnessLevelPage';
 import { PickYourPTPage } from './app/screens/PickYourPTPage';
 import { SetGoalsPage } from './app/screens/SetGoalsPage';
-import { LoginTwoPage } from './app/screens/LoginTwoPage';
-import { LetsGoPage } from './app/screens/LetsGoPage';
-import { PaymentPage } from './app/screens/PaymentPage';
-import { YouDidItPage } from './app/screens/YouDidItPage';
+import { BaseInfoPage } from './app/screens/BaseInfoPage';
 
 const Stack = createStackNavigator();
 
@@ -29,17 +26,13 @@ export default () => {
           headerShown: false,
         }}
       >
-
         {/* <Stack.Screen name="LoginPage" component={LoginPage} /> */}
-        {/* <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} /> */}
+        <Stack.Screen name="WhoAreYou" component={WhoAreYouPage} />
+        <Stack.Screen name="BaseInfo" component={BaseInfoPage} />
         <Stack.Screen name="Interest" component={InterestSelectPage} />
         <Stack.Screen name="PT" component={PickYourPTPage} />
         <Stack.Screen name="FitnessLevel" component={FitnessLevelPage} />
         <Stack.Screen name="SetGoals" component={SetGoalsPage} />
-        <Stack.Screen name="LoginTwo" component={LoginTwoPage} />
-        <Stack.Screen name="LetsGo" component={LetsGoPage} />
-        <Stack.Screen name="Payment" component={PaymentPage} />
-        <Stack.Screen name="YouDidIt" component={YouDidItPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

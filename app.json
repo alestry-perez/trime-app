@@ -13,15 +13,19 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apz.TrimeApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/pics/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.apz.TrimeApp"
     },
     "web": {
       "favicon": "./app/assets/pics/favicon.png"

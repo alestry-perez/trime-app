@@ -1,67 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   Image,
   View,
   Button,
-  Platform,
-  StatusBar,
-  SafeAreaView,
+  Text,
+  TouchableHighlight,
 } from 'react-native';
 
+import { GenSelect } from '../components/GenSelect';
+import { NumberScroll } from '../components/NumberScroll';
 import { ScreenWithNext } from '../components/ScreenWithNext';
 
-import colors from '../config/colors';
-
 export let WhoAreYouPage = ({ navigation }) => {
+  let [selected, setSelected] = useState(false);
+  let onPress = () => {
+    setSelected(!selected);
+  };
   return (
     <ScreenWithNext
       navigation={navigation}
       heading="Lets Start"
-      nextScreen="Interest"
+      nextScreen="BaseInfo"
     >
-      {/* <View style={styles.container}>
-        <Image
-          style={styles.background}
-          source={require('../assets/background.png')}
-        />
-        <View style={styles.profilesection}>
+      <View style={styles.container}>
+        <View style={styles.profileSection}>
           <Image source={require('../assets/profile-ellipse.png')} />
           <Image
-            style={styles.profilepicture}
+            style={styles.profilePicture}
             source={require('../assets/profile-picture.png')}
           />
           <Image
-            style={styles.profilesubtext}
+            style={styles.profileSubtext}
             source={require('../assets/profile-subtext.png')}
           />
         </View>
-      </View> */}
+        <View>
+          <NumberScroll />
+          <Text style={styles.ageText}>years</Text>
+          <Image
+            style={styles.outline}
+            source={require('../assets/outline.png')}
+          />
+        </View>
+        <GenSelect />
+      </View>
     </ScreenWithNext>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.white,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Platform.OS === ['ios, android'] ? StatusBar.currentHeight : 0,
-  },
   background: {
     top: 80,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  profilesection: {
+  profileSection: {
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 700,
+    bottom: -45,
   },
-  profilepicture: {
-    bottom: 300,
+  profilePicture: {
+    bottom: 135,
   },
-  profilesubtext: {
-    bottom: 180,
+  profileSubtext: {
+    bottom: 85,
+  },
+  outline: {
+    top: 47,
+    alignSelf: 'center',
+    position: 'absolute',
+  },
+  ageText: {
+    bottom: 24,
+    fontSize: 18,
+    fontWeight: '700',
+    alignSelf: 'center',
   },
 });
