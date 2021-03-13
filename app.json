@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TrimeApp",
-    "slug": "TrimeApp",
+    "name": "Trime-App-Demo",
+    "slug": "trimeapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/pics/icon.png",
@@ -30,6 +30,7 @@
     "web": {
       "favicon": "./app/assets/pics/favicon.png"
     },
-    "description": ""
+    "description": "Trime App\nA HyperIsland Student Project\nDesign & Frontend Development Project\n\nhttp://trime.app/\n\nDeveloped by:\nElla Söder\nGuðmundur Björnsson\nLovisa Elensky\nSupipi Algama\nAlestry F. Pérez",
+    "githubUrl": "https://github.com/alestry-perez/trime-app"
   }
 }
